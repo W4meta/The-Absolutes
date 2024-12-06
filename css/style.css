@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-cl: #0b0822;
+    --f-cl: #d2d0e0;
+    --btn-cl: #632cb4;
+    --card-cl: #020129;
+    --scrld: #0d0a24;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100rem;
+    font-family: sans-serif;
+    background-color: var(--bg-cl);
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(/aseet/bbblurry.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+    background-color: var(--scrld);
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a{
+    color: var(--btn-cl);
+    font-size: 24px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+}
+.nav-links a {
+    color: var(--f-cl);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+}
+.menu-toggle {
+    display: none;
+    color: var(--f-cl);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* home ===================================================================================================================*/
+#home {
+    padding: 50px 4.8rem 0;
+    height: 100vh;
+}
+
+#home .container-h .bg {
+    display: none;
+}
+
+#home .container-h {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* left */
+#home .container-h .left-h {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 592px;
+    padding-top: 70px;
+}
+
+#home .container-h .left-h .left-t-h .p1{
+    font-family: "Istok Web", sans-serif;
+    font-size: 4.4rem;
+    line-height: 1;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--f-cl);
+}
+
+#home .container-h .left-h .left-t-h .p2 {
+    font-family: "Istok Web", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--f-cl);
+}
+
+#home .container-h .left-h .left-button-home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#home .container-h .left-h .left-button-home button{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--btn-cl);
+    font-size: 17px;
+    cursor: pointer;
+    color: var(--f-cl);
+}
+
+#home .container-h .left-h .left-button-home button:hover {
+    border: 1px solid var(--f-cl);
+    transition: 0.3s ease;
+}
+
+/* right */
+#home .container-h .right-h {
+    height: 100%;
+    width: 45%;
+    margin-top: 30px;
+    position: relative;
+    right: -5px;
+    top: -40px;
+    padding: 0;
+}
+
+#home .container-h .right-h .r-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10em 65rem 0 0;
+    position: relative;
+    top: -10rem;
+    right: -4rem;
+    height: 100%;
+    width: 100%;
+}
+
+#home .container-h .right-h .r-card img {
+    background-size: cover;
+    position: bottom left;
+    width: 100%;
+}
+
+#home .container-h .right-h .tab-card {
+    display: none;
+}
+
+/* Structum =========================================================================================================================*/
+#structum {
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 125vh;
+}
+
+#structum .r {
+    text-align: justify;
+    position: absolute;
+    z-index: -1;
+    color: var(--f-cl);
+    left: 800px;
+    filter: blur(1.5px);
+    bottom: -600px;
+    width: 400px;
+    height: 300px;
+}
+
+#structum .title-s {
+    text-align: center;
+    font-family: "Istok Web", sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    margin: 10% auto 50px;
+    width: 60%;
+    height: 50px;
+    color: var(--f-cl);
+}
+#structum .bentobox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bentobox:hover .card:not(:hover) {
+    filter: blur(4px) brightness(0.7);
+}
+#structum .card {
+    background-color: var(--card-cl);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 310px;
+    height: 310px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#structum .card:hover {
+    filter: none;
+    transform: scale(1.02);
+    z-index: 1;
+    text-shadow: 10px 1px 36px rgba(210, 208, 224, 1);
+    filter: brightness(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#structum .card img {
+    /* overflow: hidden; */
+    width: 129.5px;
+    position: absolute;
+    /* margin-bottom: -20px; */
+}
+
+#structum .card .glases {
+    width: 90%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: var(--f-cl);
+    text-align: center;
+    bottom: -250px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#structum .glass {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* About */
+#about {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    padding-top: 8rem;
+    position: relative;
+}
+
+#about .text-a {
+    width: 60%;
+    box-sizing: border-box;
+    font-family: "Istok Web", sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -25rem;
+    color: var(--f-cl);
+}
+
+#about .text-a h1 {
+    margin-bottom: 2rem;
+    font-size: 40px;
+    font-family: "Istok Web", sans-serif;
+}
+
+#about .text-a p {
+    font-size: 16px;
+    font-family: "Istok Web", sans-serif;
+}
+
+#about  .img-a img {
+    position: relative;
+    width: 75rem;
+}
+
+#about .img-a {
+    width: 75rem;
+    height: 23rem;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 10%;
+    border: 2px solid #fff;
+}
+
+#about .img-a:hover {
+    box-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #fff;
+    transition: all 0.3s ease;
+}
+
+#about .title-a {
+    font-size: 24rem;
+    font-family: "Istok Web", sans-serif;
+    opacity: 0.1;
+    position: absolute;
+    bottom: -20rem;
+    z-index: -1;
+    text-align: center;
+    color: white;
+}
+
+
+/* contact/footer */
+#contact {
+    background-color: var(--scrld);
+    color: var(--f-cl);
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-title {
+    color: var(--f-cl);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #60A5FA;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--f-cl);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--btn-cl);
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.bottom-bar {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
