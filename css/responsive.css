@@ -66,7 +66,7 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.4px);
         -webkit-backdrop-filter: blur(4.4px);
-        background-image: url(aseet/texture-with-pleasant-marble-effect-luxury-brands-liquid-art-style-painted-oil_480962-31954.jpg);
+        background-image: url(/aseet/texture-with-pleasant-marble-effect-luxury-brands-liquid-art-style-painted-oil_480962-31954.jpg);
         background-size: cover;
     }
 
@@ -85,6 +85,10 @@
         margin-top: 20px;
         z-index: 2;
         color: white;
+    }
+
+    #home .container-h .left-h .left-button-home {
+        margin-top: 30px;
     }
 
     #home .container-h .right-h {
