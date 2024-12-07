@@ -327,6 +327,7 @@ body {
     position: relative;
     margin-top: 10%;
     border: 2px solid #fff;
+    display: flex;
 }
 
 #about .img-a:hover {
