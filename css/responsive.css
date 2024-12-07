@@ -188,7 +188,7 @@
 /* Responsive */
 /* Mobile */
 /* height 340 */
-@media (max-width: 360px) {
+@media (max-width: 433px) {
     #home {
         height: 110vh;
     }
