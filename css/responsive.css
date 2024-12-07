@@ -1,11 +1,11 @@
 /* Responsive */
+/* Tab */
 
 @media (min-width: 768px) {
     .footer-content {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
 
 @media (min-width: 768px) {
     .bottom-content {
@@ -36,8 +36,6 @@
     }
 }
 
-
-/* Tab */
 @media (max-width: 768px) {
     /* bagian home */
     #home {
@@ -185,4 +183,126 @@
     #about .title-a {
         display: none;
     }
+}
+
+/* Responsive */
+/* Mobile */
+/* height 340 */
+@media (max-width: 360px) {
+    #home {
+        height: 110vh;
+    }
+
+    #home .container-h .left-h .left-t-h {
+        padding: 0.9rem;
+    }
+
+    #home .container-h .left-h .left-t-h .p1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #home .container-h .left-h .left-t-h .p2 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #home .container-h .left-h .left-button-home {
+        gap: 5px;
+    }
+
+    #home   .container-h .left-h .left-button-home button {
+        width: 9rem;
+        height: 2rem;
+        font-size: 13px;
+        text-transform: capitalize;
+    }
+    
+    #home .container-h .right-h .tab-card {
+        bottom: -9rem;
+    }
+
+    #home .container-h .right-h .tab-card img {
+        width: 15rem;
+    }
+
+    /* bagian structum */
+    #structum {
+        height: 60vh;
+        padding: 0;
+    }  
+
+    #structum .bentobox {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        gap: 10px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #structum .bentobox::-webkit-scrollbar {
+        display: none;
+    }
+
+    #structum .bentobox .card {
+        min-width: 280px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 0;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease;
+        height: 18rem;
+    }
+
+    #structum .bentobox .card:hover {
+        transform: translateY(1px);
+    }
+
+    #structum .bentobox .card img {
+        width: 7.9rem;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    #structum .bentobox .card .glases {
+        width: 80%;
+        height: 15%;
+        top: 210px;
+    }
+
+    .glases p {
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    /* bagian about */
+    #about {
+        padding: 0 2rem;
+    }
+
+    #about .text-a {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    #about .img-a {
+        width: 21rem;
+        height: 7rem;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    #about .img-a img {
+        width: 100%;
+    }
+
 }

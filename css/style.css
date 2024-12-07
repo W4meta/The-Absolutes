@@ -325,9 +325,8 @@ body {
     overflow: hidden;
     border-radius: 30px;
     position: relative;
-    margin-top: 10%;
+    margin: 10% auto 0;
     border: 2px solid #fff;
-    display: flex;
 }
 
 #about .img-a:hover {
