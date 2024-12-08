@@ -318,4 +318,10 @@
         display: none;
     }
 
+    .menu-toggle {
+        display: flex;
+        position: relative;
+        left: -1rem;
+    }
+
 }
