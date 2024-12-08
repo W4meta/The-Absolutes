@@ -321,7 +321,7 @@
     .menu-toggle {
         display: flex;
         position: relative;
-        left: -1rem;
+        left: -3rem;
     }
 
 }
