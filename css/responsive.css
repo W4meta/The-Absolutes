@@ -196,6 +196,7 @@
 
     #home {
         height: 110vh;
+        overflow-x: hidden;
     }
 
     #home .container-h .left-h .left-t-h {
@@ -292,6 +293,7 @@
     /* bagian about */
     #about {
         padding: 0 2rem;
+        overflow-x: hidden;
     }
 
     #about .text-a {
@@ -312,6 +314,7 @@
 
     #contact {
         max-width: 435px;
+        overflow-x: hidden;
     }
 
     #contact .bottom-bar {
